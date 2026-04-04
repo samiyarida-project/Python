@@ -20,3 +20,9 @@ print("2 hours study:",result1)
 print("4 hours study:",result2)
 print("5 hours study:",result3)
 
+output:
+
+2 hours study: [0]
+4 hours study: [1]
+5 hours study: [1]
+
