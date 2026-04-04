@@ -20,15 +20,17 @@ model.compile(optimizer='sgd', loss='mean_squared_error')
 
 
 
-# Train the mode
-l
+# Train the model
 model.fit(X, Y, epochs=300, verbose=0)
 
 
 
-# Predict fuel for 6×100 km
+# Predict fuel for 6Ã—100 km
 
 distance = 6
 fuel_pred = model.predict([distance])[0][0]
 
 print(f"Predicted fuel for {distance*100} km: {fuel_pred:.2f} liters")
+
+output:
+Predicted fuel for 600 km: 48.12 liters
