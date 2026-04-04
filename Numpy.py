@@ -18,3 +18,13 @@ max_val = np.max(arr1)
 print("Mean:", mean_val)
 print("Minimum:", min_val)
 print("Maximum:", max_val)
+
+
+output:
+1D Array: [10 20 30 40]
+2D Array:
+ [[1 2]
+ [3 4]]
+Mean: 25.0
+Minimum: 10
+Maximum: 40
