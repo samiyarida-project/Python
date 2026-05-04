@@ -1,0 +1,26 @@
+import random
+
+target = random.randint(1, 50)
+
+print("Number Guessing Game")
+
+guess = int(input("Enter your guess: "))
+
+while guess != target:
+    if guess < target:
+        print("Too low!")
+    else:
+        print("Too high!")
+
+guess = int(input("Try again: "))
+print(" Congratulations! You guessed the correct number.")
+
+#Output:
+#Number Guessing Game
+#Enter your guess: 35
+#Too low!
+#Try again: 45
+#Too high!
+#Try again: 40
+#Congratulations! You guessed the correct number.
+
