@@ -1,0 +1,61 @@
+print("Student Grade Tracker")
+
+students = {}
+
+while True:
+
+    print("\n1. Add Student")
+    print("2. View Students")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+
+        name = input("Enter student name: ")
+        grade = input("Enter student grade: ")
+
+        students[name] = grade
+
+        print("Student added successfully")
+
+    elif choice == "2":
+
+        print("\nStudent Records:")
+
+        for name in students:
+            print(name, ":", students[name])
+
+    elif choice == "3":
+
+        print("Program Ended")
+        break
+
+    else:
+        print("Invalid Choice")
+
+
+#Output:
+Student Grade Tracker
+
+1. Add Student
+2. View Students
+3. Exit
+Enter your choice: 1
+Enter student name: Eleven
+Enter student grade: 85
+Student added successfully
+
+1. Add Student
+2. View Students
+3. Exit
+Enter your choice: 2
+
+Student Records:
+Eleven : 85
+
+1. Add Student
+2. View Students
+3. Exit
+Enter your choice: 3
+Program Ended
