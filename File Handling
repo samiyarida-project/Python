@@ -1,0 +1,85 @@
+# FILE HANDLING
+import os
+
+filename = "Magic.txt"
+
+# 1. CREATE & WRITE FILE
+with open(filename, "w") as file:
+    file.write("Hello Will\n")
+    file.write("Welcome to Hogwarts\n")
+
+print("File created and data written.\n")
+
+# 2. READ ENTIRE FILE
+print("Reading full file:\n")
+
+with open(filename, "r") as file:
+    content = file.read()
+    print(content)
+
+# 3. APPEND DATA
+with open(filename, "a") as file:
+    file.write("Class started.\n")
+
+print("\nData appended successfully.\n")
+
+# 4. READ LINE BY LINE
+print("Reading line by line:\n")
+
+with open(filename, "r") as file:
+    for line in file:
+        print(line.strip())
+
+# 5. READ ONE LINE
+print("\nReading first line only:\n")
+
+with open(filename, "r") as file:
+    print(file.readline())
+
+# 6. CHECK FILE EXISTS
+print("\nChecking file existence:")
+
+if os.path.exists(filename):
+    print("File exists.")
+else:
+    print("File does not exist.")
+
+# 7. DELETE FILE
+if os.path.exists(filename):
+    os.remove(filename)
+    print("\nFile deleted successfully.")
+else:
+    print("\nFile does not exist.")
+
+print("\nProgram completed.")
+
+
+
+#Output:
+#File created and data written.
+
+#Reading full file:
+
+#Hello Will
+#Welcome to Hogwarts
+
+
+#Data appended successfully.
+
+#Reading line by line:
+
+#Hello Will
+#Welcome to Hogwarts
+#Class started.
+
+#Reading first line only:
+
+#Hello Will
+
+
+#Checking file existence:
+#File exists.
+
+#File deleted successfully.
+
+#Program completed.
