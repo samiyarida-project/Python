@@ -43,12 +43,6 @@ axes[1,0].set_title("Age Distribution")
 sns.histplot(df['fare'], kde=True, ax=axes[1,1])
 axes[1,1].set_title("Fare Distribution")
 
-# 6. Correlation heatmap
-numeric_df = df.select_dtypes(include=['number'])
-
-sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm', ax=axes[1,2])
-axes[1,2].set_title("Correlation Heatmap")
-
 # Adjust layout 
 plt.tight_layout()
 
